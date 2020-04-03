@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Suicidio, Suicida, Prevención, Depresión, Angustia, Tristeza, Autoayuda, Ayuda, Uruguay, Salud, Mental, Llorar, Miedo, Esperanza, Desilusión, Muerte, Duelo, Separación, Quiebra, Automutilación, Crisis, Estres, Stress, autodestrucción ">
+    <meta name="description" content="TMA Sistema de Prevención del Suicidio">
+    <meta name="author" content="URUTribe Devs">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMA - Tu Mano Amiga</title>
+</head>
+<body>
+    
+    <header class="header">
+        
+        <div class="container logo-nav-container">
+            <a href="#"><img src="img/Logo_Final_TMA.png" width="170" alt="170"></a>
+            <nav class="navigation">
+        </div>
+
+                         
+        <nav class="navigation">
+            <a href="#">Ingresar</a>
+            <a href="#">Necesito Ayuda</a>
+            <a href="#">Quiero Ayudar</a>
+            <a href="#">+</a>
+        </nav>
+    </header>
+
+    <div class="splash">
+        <h1>Somos Tu Mano Amiga</h1>
+    </div>
+
+    <section class="main">
+            <span class="title color-blue">Tomate un Respiro, estamos con vos</span>
+            <div class="yt-video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/O7iwXta0lTU" frameborder="0"
+                    allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <hr>
+
+            <section class="content">
+                <h1>Violencia cultural</h1>
+               
+                <p>Esta forma de la violencia hace referencia a aspectos de la cultura que la legitiman a través del arte, la religión, la filosofía, el derecho, etc.</p>
+                <p>De los tres tipos de violencia (directa, estructural y cultural) la directa es clara y visible, por lo que resulta relativamente sencillo detectarla y combatirla. En cambio, la violencia cultural y la violencia estructural, son menos visibles, pues en ellas intervienen más factores, detectar su origen, prevención y remedio es más complicado.</p>
+                <p>Hacia los años 90 surge, de la mano de Galtung, una nueva aproximación a la violencia al crearse el concepto de violencia cultural, que la define como una violencia, simbólica, que “se expresa desde infinidad de medios (simbolismos, religión, ideología, lenguaje, arte, ciencia, leyes, medios de comunicación, educación, etc.), y que cumple la función de legitimar la violencia directa y estructural, así como de inhibir o reprimir la respuesta de quienes la sufren, y ofrece justificaciones para que los seres humanos, a diferencia del resto de especies, se destruyan mutuamente y sean recompensados incluso por hacerlo”.1​ Así, por ejemplo, se puede aceptar la violencia revolucionaria de grupos extremistas o en defensa de las ideologías totalitarias.</p>
+            </section>
+        
+    </section>
+       
+    <footer class="footer">
+        <center> <a href="#" class="logo"><img src="img/Logo Final TMA_Version_3.png" width="100" alt="100"> </a> </center>
+    </footer>
+
+    </section>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            display: flex;
+            background: #f89306;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body {
+            background: #ccc;
+        }
+
+        header a {
+            display: inline-block;
+            text-decoration: none;
+            padding: .4rem;
+            color: #fff;
+            font-size: 1.1rem;
+            
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .main {
+            background: #fff;
+            width: calc(100% - 2rem);
+            max-width: 900px;
+            margin:1rem auto;
+            padding: 1rem;
+        }
+
+        section.content {
+            padding: 1rem 0;
+        }
+
+        section.content h1 {
+            font-size: 2rem;
+        }
+
+        section.content p {
+            font-size: 1.3rem;
+            margin-bottom: .5rem;
+        }
+
+        .yt-video {
+            width: 100%;
+            display: flex;
+
+        }
+
+        hr {
+            margin: 1rem 0;
+        }
+
+        .title {
+            font-size: 2rem;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            padding: 1rem 0;
+        }
+
+        .splash {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            background:#e67e22;
+            background-image: url(https://images.unsplash.com/photo-1529180979161-06b8b6d6f2be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80);
+            background-size: 100%;
+            background-position: bottom;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .splash h1 {
+            font-size: 2rem;
+            color: #ecc785;
+            transition: 1s;
+            animation-name: stay-in;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes stay-in {    
+            from {
+                position: relative;
+                top: -5rem;
+            }
+            to {
+                position: relative;
+                top: 0rem;
+                font-size: 6rem;
+             }
+        }
+        @media screen and (max-width: 900px) {
+            .header {
+                padding-top: .5rem;
+            }
+
+            .splash {
+                background-size: 400%;
+                height: 30vh;
+            }
+            .splash h1 {
+                font-size: 1rem;
+                color: #fff;
+                transition: 1s;
+                animation-name: stay-in;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes stay-in {    
+            from {
+                position: relative;
+                top: -5rem;
+            }
+            to {
+                position: relative;
+                top: 0rem;
+                font-size: 2rem;
+             }
+        }
+        }
+
+        .logo {
+            color: #fff;
+        }
+
+
+    </style>
+</body>
+</html>
+
