@@ -20,6 +20,11 @@ function logueo() {
 
 }
 
+function dirigirARegistro() {
+
+    window.location.href = "registro.html";
+}
+
 function storageGuardar() { //se guarda el nombre ingresado en el formulario
 
     localStorage.nombre = document.getElementById("user").value; //se guarda en .nombre de local storage
